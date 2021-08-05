@@ -20,5 +20,5 @@ resource "azurerm_mysql_server" "server" {
   public_network_access_enabled     = var.public_net_access 
   ssl_enforcement_enabled           = var.ssl 
   ssl_minimal_tls_version_enforced  = var.ssl_tls_version 
-  tags                              - var.tags
+  tags                              = var.tags
 }
