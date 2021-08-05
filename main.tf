@@ -1,7 +1,10 @@
+
+
+
 resource "azurerm_mysql_server" "server" {
-  name                = "example-mysqlserver"
-  location            = azurerm_resource_group.example.location
-  resource_group_name = azurerm_resource_group.example.name
+  name                = var.name
+  location            = var.location
+  resource_group_name = var.resource_group_name
 
   administrator_login          = var.admin_login
   administrator_login_password = var.admin_password
