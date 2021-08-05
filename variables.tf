@@ -30,7 +30,7 @@ variable storage {
     default     = 5120
 }
 
-variable version {
+variable version_server {
     type        = number
     default     = "5.7"
 }
